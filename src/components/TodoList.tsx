@@ -37,7 +37,7 @@ class TodoList extends React.Component<object, IState> {
         });
     }
 
-    public onRemove = (e: React.EventHandler): void => {
+    public onRemove = (id: number): void => {
         this.setState(
             ({todoItems}) => ({
                 todoItems: todoItems.filter(todo => todo.id !== id)
